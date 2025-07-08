@@ -1,29 +1,6 @@
 #include <stdio.h>
+#include "sorting/selection_sort.h"
 
-void swap(int* x, int* y){
-  int tmp;
-
-  tmp = *x;
-  *x = *y;
-  *y = tmp;
-}
-
-
-void selectionSort(int *arr, int length) {
-  int i, j, jMin;
-
-  for (i = 0; i < length - 1; ++i) {
-    jMin = i;
-
-    for (j = i + 1; j < length;  ++j) {
-      if (arr[j] < arr[jMin])
-        jMin = j;
-    }
-
-    if (jMin != i)
-      swap(&arr[i], &arr[jMin]);
-  }
-}
 
 int main() {
   int n, i;
@@ -43,4 +20,3 @@ int main() {
     printf("%d ", L[i]);
   printf("\n");
 }
-

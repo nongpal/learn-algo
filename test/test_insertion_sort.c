@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "../sorting/insertion_sort.h"
+#include "sorting/insertion_sort.h"
 
 int main() {
   int n, i;

@@ -1,12 +1,6 @@
 #include <stdio.h>
-
-void swap(int* x, int* y){
-  int tmp;
-
-  tmp = *x;
-  *x = *y;
-  *y = tmp;
-}
+#include "sorting/bubble_sort.h"
+#include "utilities/swaps.h"
 
 void bubbleSort(int *arr, int length) {
   int newn;
