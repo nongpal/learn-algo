@@ -1,4 +1,4 @@
-#include "binary_search.h"
+#include "searching/binary_search.h"
 
 int binarySearch(int* arr, int length, int target) {
   int L, R, m;
